@@ -1,0 +1,333 @@
+.top {
+    background: url("../img/bg.jpg") repeat-x;
+}
+.header {
+    height: 74px;
+}
+.header img {
+    height: 44px;
+    margin-top: 13px;
+    float: left;
+}
+.header ul {
+    float: right;
+    padding-top: 21px;
+}
+.header ul li {
+    list-style: none;
+    float: left;
+    margin-right: 5px;
+}
+.header li a {
+    line-height: 33px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    display: inline-block;
+    padding-left: 10px;
+}
+.header li:first-child a {
+    background: url("../img/hd.png") no-repeat;
+}
+.header li a span {
+    line-height: 33px;
+    display: inline-block;
+    padding-right: 10px;
+}
+.header li:first-child span {
+    background: url("../img/hd.png") right;
+}
+.header li:hover a {
+    background: url("../img/hd1.png");
+}
+.header li:hover span {
+    background: url("../img/hd1.png") right;
+}
+.middle {
+    /*height: 810px;*/
+}
+.middle .middle_left {
+    width: 478px;
+    padding-top: 49px;
+}
+.middle .middle_left h1 {
+    font-size: 26px;
+    font-weight: normal;
+    padding-bottom: 3px;
+}
+.middle .middle_left p{
+    font-size: 16px;
+    color: #979797;
+    margin: 10px 0;
+}
+.middle .middle_left>a {
+    display: block;
+    width: 224px;
+    height: 64px;
+    margin-top: 20px;
+    color: white;
+    background: url("../img/btn-1.png");
+}
+.middle .middle_left>a:hover {
+    background: url("../img/15lO81V.png");
+}
+.middle .middle_left ul {
+    margin-top: 10px;
+}
+.middle .middle_left li {
+    height: 25px;
+    color: #999999;
+    font-size: 14px;
+}
+.middle_left li em {
+    width: 6px;
+    height: 6px;
+    background-color: #999999;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 11px;
+}
+.middle_left li a {
+    color: #609700;
+}
+.middle_left li a:hover {
+    color: #333333;
+    text-decoration: underline;
+}
+.middle .middle_right {
+    width: 490px;
+    height: 400px;
+    margin-top: 25px;
+}
+.middle .middle_right_img a {
+	width: 490px;
+	height: 304px;
+	display: inline-block;
+    position: relative;
+}
+.middle_right_img {
+	width: 490px;
+	height: 304px;
+}
+.middle_right_img a img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #DCDCDC;
+}
+.middle_right_img a .img1 {
+	opacity: 1;
+	z-index: 2;
+	animation: img1 3s linear infinite alternate;
+}
+.middle_right_img a .img2 {
+	opacity: 0;
+	z-index: 1;
+	animation: img2 3s 1s linear infinite alternate;
+}
+.middle_right_img a .img3 {
+	opacity: 0;
+	z-index: 0;
+	animation: img3 3s 2s linear infinite alternate;
+}
+@keyframes img1{
+	0%{
+		opacity: 1;
+		z-index: 2;
+	}
+	100%{
+		opacity: 0;
+		z-index: 0;
+	}
+}
+@keyframes img2{
+	0%{
+		opacity: 0;
+		z-index1: 1;
+	}
+	100%{
+		opacity: 1;
+		z-index: 2;
+	}
+}
+@keyframes img3{
+	0%{
+		opacity: 0;
+		z-index1: 0;
+	}
+	100%{
+		opacity: 1;
+		z-index: 3;
+	}
+}
+.middle_right a span {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 110px;
+    left: 0;
+	z-index: 3;
+    display: none;
+    background: url("../img/sprice.png") no-repeat -16px -59px;
+}
+.middle_right a .span2 {
+    left: 450px;
+    background: url("../img/sprice.png") no-repeat -68px -59px;
+}
+.middle_right:hover a span {
+    display: block;
+}
+.middle_right p {
+    display: block;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+.middle_right p>a {
+    color: #609700;
+    margin-top: 8px;
+}
+.middle_right p>a:hover {
+    color: #333333;
+    text-decoration: underline;
+}
+.middle_right ul {
+    width: 78px;
+    height: 26px;
+    margin: 20px auto 0;
+}
+.middle_right ul li {
+    width: 26px;
+    height: 26px;
+    float: left;
+    background: url("../img/sprice.png") no-repeat -36px -110px;
+    /*animation: li 3s linear infinite;*/
+}
+/*@keyframes li {*/
+    /*0%{*/
+        /*background-position: -12px -110px;*/
+        /*!*background: url("../img/sprice.png") no-repeat -36px -110px;*!*/
+    /*}*/
+    /*50%{*/
+        /*background: url("../img/sprice.png") no-repeat -12px -110px;*/
+    /*}*/
+    /*0%{*/
+        /*background: url("../img/sprice.png") no-repeat -36px -110px;*/
+    /*}*/
+/*}*/
+.footer {
+    margin-top: 44px;
+}
+.left ul li {
+    width: 216px;
+    font-size: 14px;
+    float: left;
+}
+.left li h2 {
+    padding-top: 6px;
+    font-size: 14px;
+}
+.left li p {
+    color: #999999;
+    margin: 5px 0;
+}
+.left li  a {
+    color: #609700;
+}
+.left li  a:hover {
+    color: #333333;
+    text-decoration: underline;
+}
+.footer .right {
+    width: 308px;
+    height: 387px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.footer .right h2 {
+    font-size: 14px;
+}
+.right ul li {
+	width: 315px;
+    list-style-type: disc;
+    color: #999999;
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.8;
+}
+.right li a {
+    color: #609700;
+}
+.right li .span4 {
+	float: right;
+}
+.right li .span3 {
+	font-size: 11px;
+	color: red;
+}
+.right li a:hover , .right .more:hover {
+	text-decoration: underline;
+	color: #333333;
+}
+.right .more {
+	color: #609700;
+	font-size: 14px;
+}
+.ico {
+	width: 96px;
+	height: 22px;
+	padding-top: 20px;
+	font-size: 14px;
+	position: relative;	
+}
+.ico a {
+	display: inline-block;
+	width: 56px;
+	padding-left: 40px;
+	font-weight: 700;
+}
+.ico em {
+	width: 32px;
+	height: 32px;
+	background: url(../img/ico.png) no-repeat;
+	position: absolute;
+	top: 14px;
+	left: 0;
+}
+.end {
+	height: 50px;
+	border-top: 1px solid #d4dadf;
+	padding: 10px 0;
+	font-size: 12px;
+	color: #888;
+}
+.end .end_left {
+	height: 48px;
+}
+.end_left ul li ,.end_right ul li {
+	float: left;
+	margin-right: 15px;
+	position: relative;
+}
+.end_left ul li:after ,.end_right ul li:after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 14px;
+	background-color: #999999;
+	position: absolute;
+	top: 3px;
+	right: -7px;
+}
+.end_left ul li:last-child::after ,.end_right ul li:last-child::after {
+	width: 0;
+}
+.end_left li a , .end_right li a {
+	color: #888;
+}
+.end_left li a:hover ,.end_right li a:hover {
+	text-decoration: underline;
+}
+.end .end_left p {
+	margin: 5px 0;
+}
